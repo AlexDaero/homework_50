@@ -8,14 +8,17 @@
     display: flex;
     justify-content: center;
 }
+.film_text{
+    width: 200px;
+}
 .block_films{
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 25px;
 }
 .film_image{
     width: 200px;
-    height: 250px;
+    height: 300px;
     border-radius: 10px;
 }
