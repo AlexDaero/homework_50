@@ -15,10 +15,10 @@
     <div id="container">
 
     </div>
-    <script>
+    <script type="text/babel">
         const FilmBanner = (props) => {
             return (
-                <div className='film'>
+                <div>
                     <img className='film_image'
                         src={props.image}
                         alt={props.name}
@@ -28,6 +28,70 @@
                 </div>
             )
         }
+        const Films = () =>{
+            return(
+                <div className='block_films'>
+                <FilmBanner
+                name='Форрест Гамп'
+                yearRelease='1994'
+                image='https://www.steelbookbluray.com/wp-content/uploads/2024/04/gump_1.jpg'
+                />
+                <FilmBanner
+                name='Крестный отец'
+                yearRelease='1972'
+                image='https://i.pinimg.com/736x/5f/c2/73/5fc2737e20ea63d2e878d66e8be51399--alternative-movie-posters-the-godfather-poster.jpg'
+                />
+                <FilmBanner
+                name='Побег из Шоушенка'
+                yearRelease='1994'
+                image='https://cdn1.ozone.ru/s3/multimedia-y/6237175990.jpg'
+                />
+                <FilmBanner
+                name='Сокровище нации'
+                yearRelease='2004'
+                image='https://avatars.mds.yandex.net/i?id=e1d887dad07ebbdf1f3df40a459bd820_l-5606031-images-thumbs&n=13'
+                />
+                <FilmBanner
+                name='Зеленая миля'
+                yearRelease='1999'
+                image='https://i.pinimg.com/736x/14/da/d8/14dad8353042bda8cf9726af0b72fd94.jpg'
+                />
+                
+                <FilmBanner
+                name='Форрест Гамп'
+                yearRelease='1994'
+                image='https://www.steelbookbluray.com/wp-content/uploads/2024/04/gump_1.jpg'
+                />
+                <FilmBanner
+                name='Крестный отец'
+                yearRelease='1972'
+                image='https://i.pinimg.com/736x/5f/c2/73/5fc2737e20ea63d2e878d66e8be51399--alternative-movie-posters-the-godfather-poster.jpg'
+                />
+                <FilmBanner
+                name='Побег из Шоушенка'
+                yearRelease='1994'
+                image='https://cdn1.ozone.ru/s3/multimedia-y/6237175990.jpg'
+                />
+                <FilmBanner
+                name='Сокровище нации'
+                yearRelease='2004'
+                image='https://avatars.mds.yandex.net/i?id=e1d887dad07ebbdf1f3df40a459bd820_l-5606031-images-thumbs&n=13'
+                />
+                <FilmBanner
+                name='Зеленая миля'
+                yearRelease='1999'
+                image='https://i.pinimg.com/736x/14/da/d8/14dad8353042bda8cf9726af0b72fd94.jpg'
+                />
+                </div>
+            )
+        }
+        const showFilms = (
+            <div>
+                <Films/>
+                
+            </div>
+        )
+        ReactDOM.render(showFilms, document.querySelector('#container'))
     </script>
 </body>
 

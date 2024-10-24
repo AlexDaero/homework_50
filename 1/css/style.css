@@ -4,5 +4,18 @@
 }
 #container{
     margin: 0 auto;
-    max-width: 1200px;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+}
+.block_films{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.film_image{
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
 }
