@@ -16,7 +16,18 @@
 
     </div>
     <script>
-        
+        const FilmBanner = (props) => {
+            return (
+                <div className='film'>
+                    <img className='film_image'
+                        src={props.image}
+                        alt={props.name}
+                    />
+                    <p>{props.name}</p>
+                    <p>{props.yearRelease}</p>
+                </div>
+            )
+        }
     </script>
 </body>
 
