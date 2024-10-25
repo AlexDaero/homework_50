@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +10,50 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
+
 <body>
+    <div id="main">
+    </div>
     <script type="text/babel">
+        function Header() {
+            return (
+                <div>
+                    <div className='header'>
+                        <div className='container'>
+                            <div className='header_block'>
+                                <div className='header_block_logo'>
+                                    <a href='#'>
+                                        <img className='header_block_logo_image' src='./image/dns_logo.png' alt='' />
+                                    </a>
+                                </div>
+                                <div className='header_block_link'>
+                                    <a className='header_block_link_item' href='#'>
+                                        каталог
+                                    </a>
+                                    <a className='header_block_link_item' href='#'>
+                                        акции
+                                    </a>
+                                    <a className='header_block_link_item' href='#'>
+                                        избранное
+                                    </a>
+                                    <a className='header_block_link_item' href='#'>
+                                        личный аккаунт
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )
+        }
+        const showResult = (
+            <div>
+                <Header />
+
+            </div>
+        )
+        ReactDOM.render(showResult, document.querySelector('#main'))
     </script>
 </body>
+
 </html>
