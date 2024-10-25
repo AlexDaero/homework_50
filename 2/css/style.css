@@ -9,6 +9,9 @@
 .text_dec_none{
     text-decoration: none;
 }
+.orange_text{
+    color: rgb(236, 136, 26);
+}
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -135,4 +138,39 @@
     height: 230px;
 }
 .footer{
+    margin-top: 30px;
+    background-color: rgb(65, 65, 65);
+}
+.footer_block{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 0;
+}
+.footer_block_links{
+    width: 380px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.footer_block_links_column{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer_block_links_title{
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+    border-bottom: 1px solid rgb(245, 245, 245, 0.3);
+    font-weight: bold;
+    font-size: 20px;
+}
+.footer_block_links_item{
+    color: rgb(245, 245, 245);
+    text-decoration: none;
+    width: fit-content;
+    font-size: 18px;
+}
+.footer_block_links_item:hover{
+    color: rgb(236, 136, 26);
 }

@@ -147,11 +147,43 @@
                 </div>
             )
         }
-        function Footer(){
-            return(
+        function Footer() {
+            return (
                 <div className='footer'>
                     <div className='container'>
-                        <div>
+                        <div className='footer_block'>
+                            <div className='footer_block_links'>
+                                <h4 className='footer_block_links_title'>Компания</h4>
+                                <div className='footer_block_links_column'>
+                                    <a className='footer_block_links_item' href="#">О Компании</a>
+                                    <a className='footer_block_links_item' href="#">Новости</a>
+                                    <a className='footer_block_links_item' href="#">Партнерам</a>
+                                    <a className='footer_block_links_item' href="#">Вакансии</a>
+                                    <a className='footer_block_links_item' href="#">Политика конфиденциальности</a>
+                                    <a className='footer_block_links_item' href="#">Персональные данные</a>
+                                    <a className='footer_block_links_item' href="#">Правила продаж</a>
+                                </div>
+                            </div>
+                            <div className='footer_block_links'>
+                                <h4 className='footer_block_links_title'>Покупателям</h4>
+                                <div className='footer_block_links_column'>
+                                    <a className='footer_block_links_item' href="#">Как оформить заказ</a>
+                                    <a className='footer_block_links_item' href="#">Способы оплаты</a>
+                                    <a className='footer_block_links_item' href="#">Кредиты</a>
+                                    <a className='footer_block_links_item' href="#">Доставка</a>
+                                    <a className='footer_block_links_item' href="#">Статус заказов</a>
+                                    <a className='footer_block_links_item' href="#">Обмен, возврат, гарантия</a>
+                                    <a className='footer_block_links_item' href="#">Проверка статуса ремонта</a>
+                                </div>
+                            </div>
+                            <div className='footer_block_links'>
+                                <h4 className='footer_block_links_title'>Другие сервисы</h4>
+                                <div className='footer_block_links_column'>
+                                    <a className='footer_block_links_item' href="#"><span className='orange_text'>DNS</span> клуб</a>
+                                    <a className='footer_block_links_item' href="#"><span className='orange_text'>DNS</span> технологии</a>
+                                    <a className='footer_block_links_item' href="#"><span className='orange_text'>DNS</span> group</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -162,6 +194,7 @@
                 <Header />
                 <Content />
                 <ContentArticles />
+                <Footer />
             </div>
         )
         ReactDOM.render(showResult, document.querySelector('#main'))
