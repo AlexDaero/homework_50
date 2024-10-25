@@ -104,28 +104,54 @@
                                     <button className='content_block_card_btn'>Добавить в корзину</button>
                                 </div>
                             </div>
-                            <div className='content_block_articles'>
-                                <a href='#'>
-                                    <img alt='' src='' />
-                                    <h4>Как собрать ПК?</h4>
-                                </a>
-                                <a href='#'>
-                                    <img alt='' src='' />
-                                    <h4>Покупка Б/У видеокарты, подводные камни</h4>
-                                </a>
-                                <a href='#'>
-                                    <img alt='' src='' />
-                                    <h4>Как перестать играть в Deadcock?</h4>
-                                </a>
-                                <a href='#'>
-                                    <img alt='' src='' />
-                                    <h4>"Аниме на аве, мать в канаве" - так ли это?</h4>
-                                </a>
-                                <a href='#'>
-                                    <img alt='' src='' />
-                                    <h4>Спидран по сексу - советы от Поднебесного</h4>
-                                </a>
-                            </div>
+                        </div>
+                    </div>
+                </div>
+            )
+        }
+        function ContentArticles() {
+            return (
+                <div className='container'>
+                    <div className='content_block_articles'>
+                        <div className='content_block_articles_card'>
+                            <a className='text_dec_none' href='#'>
+                                <img className='content_block_articles_card_image' alt='pc' src='./image/PC.png' />
+                                <h4 className='content_block_articles_card_text'>Как собрать ПК?</h4>
+                            </a>
+                        </div>
+                        <div className='content_block_articles_card'>
+                            <a className='text_dec_none' href='#'>
+                                <img className='content_block_articles_card_image' alt='videocard' src='./image/videocard.png' />
+                                <h4 className='content_block_articles_card_text'>Покупка Б/У видеокарты, подводные камни</h4>
+                            </a>
+                        </div>
+                        <div className='content_block_articles_card'>
+                            <a className='text_dec_none' href='#'>
+                                <img className='content_block_articles_card_image' alt='deadcock' src='./image/deadlock.png' />
+                                <h4 className='content_block_articles_card_text'>Как перестать играть в Deadcock?</h4>
+                            </a>
+                        </div>
+                        <div className='content_block_articles_card'>
+                            <a className='text_dec_none' href='#'>
+                                <img className='content_block_articles_card_image' alt='anime' src='./image/anime.png' />
+                                <h4 className='content_block_articles_card_text'>"Аниме на аве, мать в канаве" - так ли это?</h4>
+                            </a>
+                        </div>
+                        <div className='content_block_articles_card'>
+                            <a className='text_dec_none' href='#'>
+                                <img className='content_block_articles_card_image' alt='pedofil' src='./image/debil.png' />
+                                <h4 className='content_block_articles_card_text'>Спидран по сексу - советы от Поднебесного</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            )
+        }
+        function Footer(){
+            return(
+                <div className='footer'>
+                    <div className='container'>
+                        <div>
                         </div>
                     </div>
                 </div>
@@ -135,6 +161,7 @@
             <div>
                 <Header />
                 <Content />
+                <ContentArticles />
             </div>
         )
         ReactDOM.render(showResult, document.querySelector('#main'))
